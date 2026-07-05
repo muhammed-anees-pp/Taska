@@ -1,0 +1,17 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+taska/
+venv/
+.env/
+
+# VS Code
+.vscode/
+
+# Database
+db.sqlite3
