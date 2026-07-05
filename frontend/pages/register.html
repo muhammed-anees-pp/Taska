@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taska | Sign up</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main class="page-center">
+        <section class="card auth-card">
+            <img class="brand-logo" src="../assets/logo.svg" alt="Taska">
+            <h1>Sign up</h1>
+            <p>Create an account to access your dashboard.</p>
+
+            <form id="registerForm" class="auth-form" novalidate>
+                <div class="form-row two-columns">
+                    <label for="first_name">
+                        First name
+                        <input type="text" id="first_name" name="first_name" autocomplete="given-name" required>
+                    </label>
+
+                    <label for="last_name">
+                        Last name
+                        <input type="text" id="last_name" name="last_name" autocomplete="family-name" required>
+                    </label>
+                </div>
+
+                <label for="email">
+                    Email
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </label>
+
+                <label for="password">
+                    Password
+                    <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+                </label>
+
+                <label for="confirm_password">
+                    Confirm password
+                    <input type="password" id="confirm_password" name="confirm_password" autocomplete="new-password" minlength="8" required>
+                </label>
+
+                <button class="button button-primary full-width" type="submit">Create account</button>
+                <p id="message" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+
+            <p class="auth-switch">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </section>
+    </main>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
